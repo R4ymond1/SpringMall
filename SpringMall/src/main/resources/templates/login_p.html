@@ -2,10 +2,10 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>index</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
-<h1>登陆页面</h1>
+<h1>登陆页面 login_p</h1>
 <p>你的当前用户名是：</p>
 <p th:text="${username}" style="margin-top: 25px; color: crimson">wxb</p>
 <p>你的权限是：</p>
@@ -32,6 +32,7 @@
             <input type="submit" value="登陆"/>
         </div>
     </form>
+
     <a href="/index">主页</a>
     <a href="/user">用户页面</a>
     <a href="/depart1">部门1页面</a>
