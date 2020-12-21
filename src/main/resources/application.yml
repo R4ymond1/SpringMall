@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/myauthorization?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    url: jdbc:mysql://localhost:3306/myauthorization?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+
+server:
+  port: 9090
+
+#vehicle:
+#  api:
+#    vehicle-string-url: http://127.0.0.1:8082/testapi/getString
+
+#mybatis:
+#  mapper-locations: classpath*:/mapper/*.xml
+#  type-aliases-package: com.gedc.entity
+#  configLocation: classpath:mybatis-config.xml
+

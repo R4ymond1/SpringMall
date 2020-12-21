@@ -37,4 +37,21 @@ public class UserController {
         model.addAttribute("authorities", authorityCollection.toString());
         return "admin/admin";
     }
+    @RequestMapping("/depart1")
+    public String depart1(@AuthenticationPrincipal Principal principal, Model model){
+        model.addAttribute("username", principal.getName());
+        Authentication  auth = SecurityContextHolder.getContext().getAuthentication();
+        Collection<GrantedAuthority> authorityCollection = (Collection<GrantedAuthority>) auth.getAuthorities();
+        model.addAttribute("authorities", authorityCollection.toString());
+        return "depart1/depart1";
+    }
+
+    @RequestMapping("/depart2")
+    public String depart2(@AuthenticationPrincipal Principal principal, Model model){
+        model.addAttribute("username", principal.getName());
+        Authentication  auth = SecurityContextHolder.getContext().getAuthentication();
+        Collection<GrantedAuthority> authorityCollection = (Collection<GrantedAuthority>) auth.getAuthorities();
+        model.addAttribute("authorities", authorityCollection.toString());
+        return "depart2/depart2";
+    }
 }
